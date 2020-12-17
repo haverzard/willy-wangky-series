@@ -1,6 +1,6 @@
 # Willy Wangky Series
 ## Description
-Website development's group assignemnt consists website services & website applications for managing a chocolate shop.
+Website development's group assignment consists website services & website applications for managing a chocolate shop.
 
 ## Table of Contents
 
