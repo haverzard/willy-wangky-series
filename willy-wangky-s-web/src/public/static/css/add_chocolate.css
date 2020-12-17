@@ -1,0 +1,93 @@
+span {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+form[action='/api/chocolates/add'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_pair {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.form_input_description {
+  min-width: 33%;
+  white-space: nowrap;
+}
+
+.form_input {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.form_input[type='text'], .form_input[type='number'], textarea.form_input {
+  flex: 1;
+  border-radius: 2px;
+  color: white;
+  background-color: #333;
+  padding: 5px 5px;
+}
+
+.form_input[type='submit'] {
+  margin-left: auto;
+  min-width: initial;
+  color: white;
+  background-color: #333;
+  border-radius: 2px;
+  border-width: 1px;
+  padding: 10px 10px;
+}
+
+.form_input[type='submit']:disabled {
+  background-color: lightgray;
+}
+
+.form_input[type='submit']:disabled:hover {
+  background-color: lightgray;
+}
+
+.form_input[type='submit']:hover {
+  background-color: #42d1f5;
+}
+
+.form_input_material {
+  display: flex;
+  align-items: center;
+}
+
+.form_input_material input {
+  margin-right: 10px;
+}
+
+.form_input_materials {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  width: 66%;
+}
+
+@media (max-width: 600px) {
+  .form_input {
+    min-width: 80vw;
+  }
+
+  .form_input_materials {
+    width: 100%;
+  }
+
+  .form_input_material label {
+    width: 70%;
+    overflow: scroll;
+  }
+
+  .form_input_material input {
+    width: 30%;
+  }
+
+  .form_calculator {
+    width: 100%;
+  }
+}

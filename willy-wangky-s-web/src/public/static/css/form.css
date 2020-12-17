@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('/static/images/background.jpg');
+    background-size: cover;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+#container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container {
+    width: 500px;
+    padding: 20px 150px;
+    border-radius: 20px;
+    background-color: rgba(148, 183, 235, 0.8);
+    -webkit-animation: open 0.5s ease;
+    animation: open 0.5s ease;
+    opacity: 0.9;
+}
+
+#form-title {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 1px;
+    background-color: white;
+    box-shadow: inset 0 0 3px 15px rgba(150, 150, 150,0.75);
+    -webkit-animation: appear 1s ease;
+    animation: appear 1s ease;
+}
+
+#form-box {
+    padding: 30px 50px;
+    box-sizing: content-box;
+    background-color: #54431C;
+    color: white;
+    box-shadow: 0 0 3px 20px rgba(65, 34, 20, 0.75);
+    -webkit-animation: appear 1s ease;
+    animation: appear 1s ease;
+}
+
+.form-input-box-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.form-input-box-container, .form-input-box, .form-input-submit, .form-redirect-button {
+    width: 100%;
+    height: 40px;
+    background-color: #eee;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.form-input-box, .form-input-label, .form-input-submit, .form-redirect-button {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-input-box, .form-input-submit {
+    margin-bottom: 20px;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-box-shadow: inset -14px -14px 35px -40px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset -14px -14px 35px -40px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -14px -14px 35px -40px rgba(0, 0, 0, 0.75);  
+}
+
+.form-input-box-dummy {
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    z-index: 0;
+    box-shadow: 0px 0px 0px 0px;
+    color: rgba(128, 255, 255, 0.8);
+}
+
+.form-input-box {
+    padding-left: 20px;    
+    z-index: 1;
+    margin-left: -100%;
+}
+
+.form-input-box:focus {
+    border: 5px solid rgba(128, 255, 255, 0.8);
+}
+
+.form-input-error, .form-input-error:focus {
+    border: 5px solid rgba(255, 128, 128, 0.8);
+}
+
+.form-input-valid, .form-input-valid:focus {
+    border: 5px solid rgba(128, 255, 128, 0.8);
+}
+
+.form-input-box:focus + .form-input-box-dummy {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+.form-input-submit:hover {
+    background-color: gray;
+}
+
+.form-redirect-button {
+    background-color: greenyellow;
+}
+
+.form-redirect-button:hover {
+    background-color: green;
+}
+
+#form-error-box {
+    height: 30px;
+    color: palevioletred;
+}
+
+/* Animation Keyframes */
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.4;
+    }
+}
+
+@-webkit-keyframes open {
+    from {
+        transform: scaleY(0);
+    }
+}
+
+@keyframes open {
+    from {
+        transform: scaleY(0);
+    }
+}
+
+@-webkit-keyframes anim-shadow {
+    to {
+        -webkit-box-shadow: 0px 0px 70px 25px;
+        -moz-box-shadow: 0px 0px 70px 25px;
+        box-shadow: 0px 0px 70px 25px;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-shadow {
+    to {
+        -webkit-box-shadow: 0px 0px 70px 25px;
+        -moz-box-shadow: 0px 0px 70px 25px;
+        box-shadow: 0px 0px 70px 25px;
+        opacity: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    #form-container {
+        padding: 0;
+        background-color: rgba(148, 183, 235, 1);
+        border-radius: 0;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #form-title {
+        background-color: initial;
+        box-shadow: none;
+        margin: 0;
+        min-height: 20vh;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #form-box {
+        box-shadow: none;
+        padding: 30px;
+        min-height: 80vh;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #form-error-box {
+        height: auto;
+    }
+}

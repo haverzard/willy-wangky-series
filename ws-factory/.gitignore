@@ -1,0 +1,6 @@
+# maven project
+/target
+
+# IDE folders
+/.idea
+/.vscode

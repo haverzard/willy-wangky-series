@@ -1,0 +1,6 @@
+# IDE Folder
+.idea
+.vscode
+env.php
+run.ps1
+/manual_test.php

@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#chocolate-detail-container {
+    padding: 0 75px;
+}
+
+.chocolate-detail-body {
+    display: flex;
+    min-height: 250px;
+}
+
+.chocolate-detail-img {
+    background-color: #654321;
+    border-radius: 0 10px;
+    color: white;
+    min-height: 250px;
+    min-width: 200px;
+    max-height: 250px;
+    max-width: 200px;
+    object-fit: contain;
+    text-align: center;
+}
+
+.chocolate-detail-desc {
+}
+
+.chocolate-detail-desc > ul,
+.amount-price-box > ul,
+.amount-only-box > ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.chocolate-detail-desc > ul > li {
+    margin: 10px 0;
+}
+
+.chocolate-detail-desc > ul > li > h3 {
+    color: #654321;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.amount-price-box {
+    display: flex;
+}
+
+.amount-price-box > ul,
+.amount-only-box > ul {
+    padding: 0;
+}
+
+.amount-input {
+    width: 75px;
+}
+
+.total-price-box > li {
+    padding-left: 20px;
+}
+
+.chocolate-detail-amount {
+    display: flex;
+}
+
+.chocolate-detail-address {
+    margin-top: 25px;
+}
+
+.chocolate-detail-address > textarea {
+    min-height: 60px;
+    width: 100%;
+}
+
+.chocolate-detail-desc > ul .label-form,
+.chocolate-detail-address .label-form {
+    color: #654321;
+    font-weight: bold;
+    white-space: pre;
+}
+
+.chocolate-detail-option {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.chocolate-detail-btn {
+    background-color: white;
+    border: 4px solid #654321;
+    color: #654321;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    min-height: 40px;
+    min-width: 120px;
+    text-decoration: none;
+}
+
+.chocolate-detail-btn:hover {
+    background-color: #654321;
+    color: white;
+    -webkit-transition: all ease-in-out 250ms;
+    transition: all ease-in-out 250ms;
+}
+
+@media (max-width: 600px) {
+    .chocolate-detail-name {
+        text-align: center;
+    }
+
+    .chocolate-detail-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chocolate-detail-option {
+        justify-content: center;
+    }
+}

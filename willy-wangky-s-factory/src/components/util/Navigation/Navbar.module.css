@@ -1,0 +1,24 @@
+#navbar-wrapper {
+    padding: 0 100px;
+    background-color: #343a40!important;
+}
+
+#navbar-balance-container {
+    display: flex;
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    color: #aaaaaa;
+}
+
+.link:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 800px) {
+    #navbar-wrapper {
+        padding: 0;
+    }
+}

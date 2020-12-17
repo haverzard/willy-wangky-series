@@ -1,0 +1,33 @@
+#notification-container {
+    display: none;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#notification-box {
+    background-color: #e6a163;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    min-width: 480px;
+    max-width: 680px;
+    margin: 10px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+
+#notification-message {
+    display: inline-block;
+    max-width: 600px;
+    word-wrap: break-word;
+}
+
+#notification-close {
+    position: absolute;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
+    right: 10px;
+}

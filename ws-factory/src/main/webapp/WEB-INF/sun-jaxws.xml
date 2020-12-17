@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints
+        xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+    <endpoint name="HelloWorldImpl"
+              implementation="com.wbd.tubes.factory.ws.services.HelloWorldImpl"
+              url-pattern="/helloworld" />
+    <endpoint name="UserServiceImpl"
+              implementation="com.wbd.tubes.factory.ws.services.UserServiceImpl"
+              url-pattern="/user" />
+    <endpoint name="ChocolateServiceImpl"
+              implementation="com.wbd.tubes.factory.ws.services.ChocolateServiceImpl"
+              url-pattern="/chocolate" />
+    <endpoint name="SaldoServiceImpl"
+              implementation="com.wbd.tubes.factory.ws.services.SaldoServiceImpl"
+              url-pattern="/saldo" />
+    <endpoint name="IngredientServiceImpl"
+              implementation="com.wbd.tubes.factory.ws.services.IngredientServiceImpl"
+              url-pattern="/ingredient" />
+    <endpoint name="RecipeServiceImpl"
+              implementation="com.wbd.tubes.factory.ws.services.RecipeServiceImpl"
+              url-pattern="/recipe" />
+    <endpoint name="AddStockRequestServiceImpl"
+              implementation="com.wbd.tubes.factory.ws.services.AddStockRequestServiceImpl"
+              url-pattern="/add-stock-request" />
+</endpoints>
